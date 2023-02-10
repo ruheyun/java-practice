@@ -8,12 +8,15 @@ public class Day02 {
 //    解释：回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
 //    例如，121 是回文，而 123 不是。
 public static void main(String[] args) {
+    //创建键盘录入对象
     Scanner scanner = new Scanner(System.in);
     System.out.println("请输入一个整数:");
-    int x = scanner.nextInt();//假如为1234
+    //从键盘获取整数
+    int x = scanner.nextInt();
     //定义一个临时变量记录x的原始值
     int temp = x;
     int num = 0;
+    //将获得的整数通过while循环倒过来
     while (x != 0){
         int i = x % 10;
         x = x / 10;
