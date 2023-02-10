@@ -12,7 +12,7 @@ public static void main(String[] args) {
 //    System.out.println("请输入数组:");
 //    int n = scanner.nextInt();
     int[] nums = {12,11,4,7,9,10};
-    int target = 18;
+    int target = 22;
     for (int i = 0; i < nums.length; i++) {
         for (int j = i+1; j < nums.length; j++) {
             if (nums[i] + nums[j] == target){
